@@ -5,15 +5,13 @@ const App = function () {
 };
 
 App.prototype.generateLinks = function () {
-  this.links.push(this.websites.map(el => `https://${el}.com`));
+  this.links = this.websites.map(el => `https://${el}.com`);
 };
 
 App.prototype.insertLinks = function () {
   let list = document.querySelector('#menu');
-  console.log(this.links);
-    // let arr = [...this.websites];
 
-  this.websites.forEach(el => {
+  this.links.forEach(el => {
     let liEl = document.createElement('li');
     let aEl = document.createElement('a');
 
