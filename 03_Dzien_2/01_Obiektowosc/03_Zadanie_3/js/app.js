@@ -55,6 +55,10 @@ btn.addEventListener("click", (e) => {
         );
     }
 
+    let newLi = document.createElement("li");
+    newLi.innerText = `${foodNameEl.value} proteins ${quanProtein.value}g, carbs ${quanCarbs.value}g, fats ${quanFats.value}g, total calories: ${res}kcal`;
+    productList.append(newLi);
+
     foods.push(foodName);
     console.log(foods);
 });
