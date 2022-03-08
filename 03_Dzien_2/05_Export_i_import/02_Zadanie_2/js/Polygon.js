@@ -1,15 +1,20 @@
-class Polygon {
-  constructor(height, width) {
-    this.name = "Polygon";
-    this.height = height;
-    this.width = width;
-  }
+// class Polygon {
+//   constructor(height, width) {
+//     this.name = "Polygon";
+//     this.height = height;
+//     this.width = width;
+//   }
 
-  area() {
-    return this.height * this.width;
-  }
+//   area() {
+//     return this.height * this.width;
+//   }
 
-  sayName() {
-    console.log("Cześć jestem", this.name + ".");
-  }
-}
+//   sayName() {
+//     console.log("Cześć jestem", this.name + ".");
+//   }
+// }
+
+// export { Polygon };
+let a = 1;
+
+export {a};

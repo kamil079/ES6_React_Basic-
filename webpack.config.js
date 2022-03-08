@@ -1,8 +1,8 @@
 const path = require("path");
-const entryPath = "01_Dzien_1/01_Operacje_na_tablicach/01_Zadanie_1";
+const entryPath = "05_Dzien_3/01_Przygotowanie_srodowiska/01_Aplikacja_pokazowa";
 
 module.exports = {
-  devtool: "source-map",
+  devtool: "eval-cheap-module-source-map",
   entry: `./${entryPath}/js/app.js`,
   output: {
     filename: "out.js",
