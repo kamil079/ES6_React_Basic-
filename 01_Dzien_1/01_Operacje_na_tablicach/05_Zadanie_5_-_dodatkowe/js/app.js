@@ -1,11 +1,11 @@
 function randomize(param1, param2, callback) {
-    if(typeof callback !== 'function') {
-        console.error('error');
+    if (typeof callback !== "function") {
+        console.error("error");
     }
 
-  random = Math.floor(Math.random() * (param1 - param2)) + param2;
-  callback(random);
-};
+    random = Math.floor(Math.random() * (param1 - param2)) + param2;
+    callback(random);
+}
 
 let foo = (el) => {
     console.log(el);

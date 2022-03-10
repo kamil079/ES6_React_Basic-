@@ -1,5 +1,5 @@
 const path = require("path");
-const entryPath = "05_Dzien_3/01_Przygotowanie_srodowiska/01_Aplikacja_pokazowa";
+const entryPath = "ES6_React_Basic-/05_Dzien_3/02_Pierwsza_aplikacja/01_Zadanie_1";
 
 module.exports = {
   devtool: "eval-cheap-module-source-map",
