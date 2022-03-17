@@ -1,7 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import animals from "./data/animals";
 
-ReactDOM.render(
-  <h1>Hello, World!</h1>,
-  document.getElementById("app")
-);
+function App() {
+    return (
+        <section>
+            Łączna liczba zwierząt to {animals.length}.<br></br>
+            Zwierzęta są następujące:<br></br>
+            <span>{animals.map((el) => el + ", ")}</span>
+        </section>
+    );
+}
+
+export default App;

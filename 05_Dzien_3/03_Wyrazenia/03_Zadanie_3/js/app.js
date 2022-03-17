@@ -1,18 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import person from "./data/person";
+import Person from "./data/person";
 
-function objLi() {
-  let ulEl = document.createElement('ul');
-  let liEl = document.createElement('li');
-  for(let el in person) {
-      liEl.innerText = el
-  }
-  ulEl.append(liEl);
-  
+function App() {
+    let tab = [];
+    for (let info in Person) {
+        tab.push(<li>{Person[info]}</li>);
+    }
+    return <ul>{tab}</ul>;
 }
 
-ReactDOM.render(
-  <h1>Hello, World!</h1>,
-  document.getElementById("app")
-);
+export default App;

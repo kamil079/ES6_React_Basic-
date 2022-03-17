@@ -1,12 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
-let bornPrompt = prompt('Podaj rok urodzenia:');
-let today = new Date();
-let yr = today.getFullYear();
+let yourBirth = prompt('Podaj rok urodzenia:');
+let today = new Date().getFullYear();
 
+function App() {
+  return <h1>Twój wiek to {parseFloat(yourBirth)}, a różnica to {parseFloat(today) - parseFloat(yourBirth)}</h1>
+} 
 
-ReactDOM.render(
-  <h1>Użytkownik ma {today - parseFloat(yr)}</h1>,
-  document.getElementById("app")
-);
+export default App;

@@ -1,11 +1,11 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
-let firstNr = prompt('Podaj pierwszą liczbę:');
-let secondNr = prompt('Podaj drugą liczbę:');
+let firstNr = prompt("Podaj pierwszą liczbę:");
+let secondNr = prompt("Podaj drugą liczbę:");
+let str = parseFloat(firstNr) + parseFloat(secondNr);
 
+function App() {
+    return <h1>Hello, World! This is from summary of prompt values {str}</h1>;
+}
 
-ReactDOM.render(
-  <h1>Hello, World! This is from summary of prompt values - {parseFloat(firstNr + secondNr)}</h1>,
-  document.getElementById("app")
-);
+export default App;
