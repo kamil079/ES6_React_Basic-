@@ -1,7 +1,9 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
 
-ReactDOM.render(
-  <h1>Hello, World!</h1>,
-  document.getElementById("app")
-);
+const imageUrl = "https://fer-api.coderslab.pl/assets/pexels-photo-4974914.jpeg";
+
+function App() {
+    return <img src={imageUrl}></img>
+};
+
+export default App;

@@ -1,13 +1,34 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
-const redDiv = <div/>;
-const greenDiv = <div/>;
-const blueDiv = <div/>;
+const redDiv = <div />;
+const greenDiv = <div />;
+const blueDiv = <div />;
 
-ReactDOM.render(
-  <>
-    {redDiv}{greenDiv}{blueDiv}
-  </>,
-  document.getElementById("app")
-);
+let height = {
+    height: '100px'
+}
+
+let red = {
+    background: 'red'
+};
+
+let green = {
+    background: 'green'
+};
+
+let blue = {
+    background: 'blue'
+};  
+
+
+function App() {
+    return (
+        <>
+            {redDiv}
+            {greenDiv}
+            {blueDiv}
+        </>
+    );
+}
+
+export default App;
