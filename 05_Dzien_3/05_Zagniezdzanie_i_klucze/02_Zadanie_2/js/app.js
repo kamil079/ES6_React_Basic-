@@ -1,7 +1,15 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React, { Fragment } from "react";
+import person from "./data/person";
 
-ReactDOM.render(
-  <h1>Hello, World!</h1>,
-  document.getElementById("app")
+let personInfo = (
+    <Fragment>
+        <h1>{person.title} {person.firstName} {person.lastName}</h1>
+        <span>{person.age}</span>
+    </Fragment>
 );
+
+function App() {
+    return <>{personInfo}</>;
+}
+
+export default App;

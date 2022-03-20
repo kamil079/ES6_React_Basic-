@@ -1,7 +1,17 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import people from "./data/people";
 
-ReactDOM.render(
-  <h1>Hello, World!</h1>,
-  document.getElementById("app")
+let list = (
+    
+        people.map((el) => {
+            console.log(el.id)
+            return <div key={el.id}>{el.name} {el.surname}</div>;
+        })
+    
 );
+
+function App() {
+    return <div>{list}</div>;
+}
+
+export default App;
