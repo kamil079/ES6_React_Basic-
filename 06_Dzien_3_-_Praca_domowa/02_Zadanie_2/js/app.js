@@ -1,7 +1,8 @@
 import React, {Component} from "react";
 import ReactDOM from "react-dom";
 
-ReactDOM.render(
-  <h1>Hello, World!</h1>,
-  document.getElementById("app")
-);
+let colorArr = ['red', 'blue', 'green', 'yellow'];
+
+export default App = () => {
+  <h1>hi</h1>
+};

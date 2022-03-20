@@ -1,7 +1,13 @@
-import React, {Component} from "react";
-import ReactDOM from "react-dom";
+import React from "react";
 
-ReactDOM.render(
-  <h1>Hello, World!</h1>,
-  document.getElementById("app")
+let size = "200px";
+
+let element = (
+    <div style={{ width: size, height: size, background: "blue" }}></div>
 );
+
+let App = () => {
+    return <>{element}</>;
+};
+
+export default App;
