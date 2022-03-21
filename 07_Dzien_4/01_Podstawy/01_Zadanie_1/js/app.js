@@ -1,7 +1,32 @@
-import React, {Component} from "react";
-import ReactDOM from "react-dom";
+import React, { Component } from "react";
 
-ReactDOM.render(
-  <h1>Hello, World!</h1>,
-  document.getElementById("app")
-);
+const Search = () => {
+    return (
+        <div>
+            <input type="text" placeholder="funkcyjnie"></input>
+            <button>Wyszukaj</button>
+        </div>
+    );
+};
+
+class SearchTwo extends Component {
+    render() {
+        return (
+            <div>
+                <input type="text" placeholder="klasowo"></input>
+                <button>Wyszukaj</button>
+            </div>
+        );
+    }
+}
+
+function App() {
+    return (
+        <>
+            <Search />
+            <SearchTwo />
+        </>
+    );
+}
+
+export default App;
