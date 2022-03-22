@@ -1,7 +1,18 @@
-import './style.scss';
+import React from "react";
 
-function App() {
-  return <h1>hello react</h1>
+let sum = {(
+    <h1>{}</h1>
+)
+};
+
+let Summary = () => {
+    return                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ds
 }
 
-export default App;
+
+let numbers = [1,2,3]
+
+export default function App() {
+    return <Summary numbers={numbers}/>
+
+}
