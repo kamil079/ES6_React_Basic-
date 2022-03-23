@@ -1,7 +1,24 @@
-import React, {Component} from "react";
-import ReactDOM from "react-dom";
+import React, { Component } from "react";
 
-ReactDOM.render(
-  <h1>Hello, World!</h1>,
-  document.getElementById("app")
-);
+let AddNumbers = ({ numberA, numberB }) => {
+    return <h1>{numberA + numberB}</h1>;
+};
+
+class AddNumbers2 extends Component {
+    render() {
+        const { numberA, numberB } = this.props;
+        return <h1>{numberA + numberB}</h1>;
+    }
+}
+
+let numberA = 2;
+let numberB = 9;
+
+export default function App() {
+    return (
+        <>
+            <AddNumbers numberA={numberA} numberB={numberB} />
+            <AddNumbers2 numberA={numberA} numberB={numberB} />
+        </>
+    );
+}

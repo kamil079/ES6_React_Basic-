@@ -1,7 +1,14 @@
-import React, {Component} from "react";
-import ReactDOM from "react-dom";
+import React from "react";
 
-ReactDOM.render(
-  <h1>Hello, World!</h1>,
-  document.getElementById("app")
-);
+let numbers = [1, 2, 3];
+
+let sum = numbers.reduce((p,c) => p + c);
+
+let Summary = () => {
+    return sum;
+};
+
+
+export default function App() {
+    return <Summary />;
+}

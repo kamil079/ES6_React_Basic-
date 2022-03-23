@@ -1,7 +1,14 @@
-import React, {Component} from "react";
-import ReactDOM from "react-dom";
+import React from "react";
 
-ReactDOM.render(
-  <h1>Hello, World!</h1>,
-  document.getElementById("app")
-);
+const LikeBox = ({likes}) => {
+    return (
+        <>
+            <div>{likes}</div>
+            <button>Like</button>
+        </>
+    );
+};
+
+export default function App() {
+    return <LikeBox likes={69}/>;
+}
