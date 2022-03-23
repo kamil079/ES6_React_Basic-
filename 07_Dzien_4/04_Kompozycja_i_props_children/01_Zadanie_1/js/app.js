@@ -1,7 +1,19 @@
-import React, {Component} from "react";
-import ReactDOM from "react-dom";
+import React from "react";
 
-ReactDOM.render(
-  <h1>Hello, World!</h1>,
-  document.getElementById("app")
-);
+let ParentComponent = () => {
+    return <ChildComponent />;
+};
+let ChildComponent = () => {
+    return <GrandchildComponent />;
+};
+let GrandchildComponent = () => {
+    return <h1>works!</h1>;
+};
+
+export default function App() {
+    return (
+        <>
+            <ParentComponent />
+        </>
+    );
+}
