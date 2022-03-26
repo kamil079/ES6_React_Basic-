@@ -1,38 +1,27 @@
 export default [
   {
-    code: 2569656303,
-    single_price: 4,
-    qty: 1,
-    name: "Ser Camembert"
+    code: 8186385258,
+    name: "Cheese",
+    price: 2.50
   },
   {
-    code: 6015390151,
-    single_price: 2,
-    qty: 2,
-    name: "Baton energetyczny"
+    code: 8991269451,
+    name: "Crisps",
+    price: 3
   },
   {
-    code: 6391248461,
-    single_price: 2.99,
-    qty: 1,
-    name: "Masło"
+    code: 7283420333,
+    name: "Pizza",
+    price: 4
   },
   {
-    code: 5350073302,
-    single_price: 1.5,
-    qty: 3,
-    name: "Woda gazowana"
+    code: 3643751176,
+    name: "Chocolate",
+    price: 1.50
   },
   {
-    code: 8676161554,
-    single_price: 3.55,
-    qty: 1.56,
-    name: "Jabłka luz"
-  },
-  {
-    code: 5039291056,
-    single_price: 12.49,
-    qty: 1,
-    name: "Zestaw śniadaniowy"
+    code: 4861657713,
+    name: "Ground almonds",
+    price: 3
   }
 ];
